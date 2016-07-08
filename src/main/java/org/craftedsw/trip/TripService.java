@@ -33,8 +33,4 @@ public class TripService {
 			throw new UserNotLoggedInException();
 		}
 	}
-
-	public int stam() {
-		return 5;
-	}
 }
