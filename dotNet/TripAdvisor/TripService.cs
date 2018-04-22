@@ -24,6 +24,10 @@ public class TripService {
 			if (isFriend) {
 				tripList = tripDAO.findTripsByUser(user);
 			}
+			else
+			{
+			    tripDAO.CreateFriendshipRequest(loggedUser, user);
+			}
 			return tripList;
 		} else {
 			throw new UserNotLoggedInException();
